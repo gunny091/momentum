@@ -6,6 +6,8 @@ const toDoList = document.querySelector("#todo-list")
 let toDos = [];
 const TODOS_KEY = "todos";
 
+
+
 function saveToDos() {
     localStorage.setItem(TODOS_KEY, JSON.stringify(toDos));
 }
@@ -17,12 +19,18 @@ function deleteTodo(event) {
     saveToDos();
 }
 
+function toDoColorToggle(event) {
+    const li = event.target.parentElement;
+    li.classList.toggle("blue")
+}
+
 function paintToDo(newToDo) {
     const li = document.createElement("li");
     li.id = newToDo.id;
 
     const span = document.createElement("span");
     span.innerText = newToDo.text;
+    span.addEventListener("click", toDoColorToggle)
 
     const button = document.createElement("button");
     button.innerText = "❌";
