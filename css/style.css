@@ -24,13 +24,18 @@
     src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
 }
 
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
 body {
     background-color: gray;
-    font-family: 'NanumBarunGothic', sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: bolder;
+    color: antiquewhite;
+    text-shadow: 1px 1px 3px black;
+    overflow: hidden;
 }
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 .blue {
@@ -47,16 +52,132 @@ body {
 
 #weather {
     margin-right: 50px;
+    margin-top: 20px;
     display: flex;
     align-items: center;
-    color: whitesmoke;
+    font-size: 30px;
+}
+
+
+/* clock */
+
+#clock {
+    display: flex;
+    justify-content: center;
+    font-size: 175px;
+    margin-top: 10vh;
 }
 
 
 /* center */
 
-#clock {
-    color: whitesmoke;
+#center {
     display: flex;
     justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+
+/* login */
+
+#login-form {
+    font-size: 20px;
+}
+
+#login-form input:first-child {
+    width: 300px;
+    height: 50px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: bolder;
+    font-size: 32px;
+    margin-right: 10px;
+}
+
+#login-form input:first-child::placeholder {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: bolder;
+    font-size: 32px
+}
+
+#login-form input:last-child {
+    width: 100px;
+    height: 56px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: bolder;
+    font-size: 32px;
+    margin-right: 10px;
+}
+
+#hi {
+    font-size: 50px;
+}
+
+
+/* todo */
+
+#todo {
+    margin-top: 32px;
+    align-items: center;
+}
+
+#todo-form {
+    font-size: 20px;
+    margin-bottom: 32px;
+}
+
+#todo-form input:first-child {
+    width: 300px;
+    height: 50px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: bolder;
+    font-size: 32px;
+    margin-right: 10px;
+}
+
+#todo-form input:first-child::placeholder {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: bolder;
+    font-size: 32px
+}
+
+#todo-list {
+    list-style-type: none;
+    display: block;
+    list-style: none;
+    padding-left: 0px;
+    text-align: center;
+    font-size: 32px;
+}
+
+
+/* background */
+
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* quote */
+
+#quote {
+    position: absolute;
+    bottom: 16px;
+    width: 100%;
+    text-align: center;
+    line-height: 1.5;
+}
+
+#quote span:first-child {
+    font-size: 30px;
+}
+
+#quote span:last-child {
+    font-size: 20px
 }

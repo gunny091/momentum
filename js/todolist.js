@@ -32,12 +32,18 @@ function paintToDo(newToDo) {
     span.innerText = newToDo.text;
     span.addEventListener("click", toDoColorToggle)
 
-    const button = document.createElement("button");
+    const space = document.createElement("span");
+    space.innerText = '  ';
+
+    const button = document.createElement("span");
     button.innerText = "❌";
     button.addEventListener("click", deleteTodo);
 
     li.appendChild(span);
+    li.appendChild(space)
     li.appendChild(button);
+
+
     toDoList.appendChild(li);
 }
 

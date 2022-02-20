@@ -28,3 +28,10 @@ if (savedUsername === null) {
 } else {
     paintHi(savedUsername);
 }
+
+hi.addEventListener("click", (event) => {
+    if (confirm("logout?")) {
+        localStorage.clear(NAME_KEY);
+        location.reload();
+    }
+})

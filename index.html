@@ -11,28 +11,32 @@
 
 <body>
     <div class="top">
-        <!-- clock -->
-        <h1 id="clock"></h1>
-
         <!-- weather -->
         <div id="weather">
-            <span></span>
+            <span></span> &nbsp;
             <span></span>
         </div>
     </div>
 
-    <!-- login -->
-    <form class="hidden" id="login-form">
-        <input required maxlength="15" type="text" placeholder="Your name">
-        <input type="submit" value="Login">
-    </form>
-    <h1 class="hidden" id="hi"></h1>
+    <!-- clock -->
+    <h1 id="clock"></h1>
 
-    <!-- todo -->
-    <form id="todo-form">
-        <input required type="text" placeholder="To Do">
-    </form>
-    <ul id="todo-list"></ul>
+    <div id="center">
+        <!-- login -->
+        <form class="hidden" id="login-form">
+            <input required maxlength="15" type="text" placeholder="Your name">
+            <input type="submit" value="Login">
+        </form>
+        <h1 class="hidden" id="hi"></h1>
+
+        <!-- todo -->
+        <div id="todo">
+            <form id="todo-form">
+                <input required type="text" placeholder="To Do">
+            </form>
+            <ul id="todo-list"></ul>
+        </div>
+    </div>
 
     <!-- quote -->
     <div id="quote">
