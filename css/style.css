@@ -30,7 +30,7 @@ body {
     font-family: 'Nanum Gothic', sans-serif;
     font-weight: bolder;
     color: antiquewhite;
-    text-shadow: 2px 2px 5px black, 0px 0px 50px black;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0), 0px 0px 50px rgba(0, 0, 0, 0.5);
     overflow: hidden;
     cursor: default;
 }
