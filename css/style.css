@@ -32,6 +32,7 @@ body {
     color: antiquewhite;
     text-shadow: 1px 1px 3px black;
     overflow: hidden;
+    cursor: default;
 }
 
 .hidden {
@@ -107,10 +108,12 @@ body {
     font-weight: bolder;
     font-size: 32px;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 #hi {
     font-size: 50px;
+    cursor: pointer;
 }
 
 
@@ -148,6 +151,7 @@ body {
     padding-left: 0px;
     text-align: center;
     font-size: 32px;
+    cursor: pointer;
 }
 
 
